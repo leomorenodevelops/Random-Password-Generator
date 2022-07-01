@@ -23,18 +23,25 @@ function generatePassword() {
     return "";
   }
 
-  // Creates confirmation for lowercase selection
+// Creates confirmation for lowercase character
   var lowercaseSelect = confirm("Click OK to confirm using lowercase characters.");
 
   if (lowercaseSelect) {
     passwordChar += lowercaseSelect;
   }
 
-  // Creates confirmation for uppercase selection
+// Creates confirmation for uppercase character
   var uppercaseSelect = confirm("Click OK to confirm using uppercase characters.");
 
   if (uppercaseSelect) {
     passwordChar += uppercaseSelect;
+  }
+
+// Creates confirmation for numerical character
+  var numericalSelect = confirm("Click OK to confirm using numerical character.");
+
+  if (numericalSelect) {
+    passwordChar += numericalSelect;
   }
 }
 
