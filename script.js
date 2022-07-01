@@ -43,6 +43,13 @@ function generatePassword() {
   if (numericalSelect) {
     passwordChar += numericalSelect;
   }
+
+// Creates confirmation for special character
+  var specialSelect = confirm("Click OK to confirm using special characters.");
+
+  if (specialSelect) {
+    passwordChar += specialSelect;
+  }
 }
 
 // Write password to the #password input
