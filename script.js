@@ -29,6 +29,13 @@ function generatePassword() {
   if (lowercaseSelect) {
     passwordChar += lowercaseSelect;
   }
+
+  // Creates confirmation for uppercase selection
+  var uppercaseSelect = confirm("Click OK to confirm using uppercase characters.");
+
+  if (uppercaseSelect) {
+    passwordChar += uppercaseSelect;
+  }
 }
 
 // Write password to the #password input
