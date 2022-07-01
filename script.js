@@ -22,6 +22,13 @@ function generatePassword() {
     alert("Password length must not exceed more than 128 characters.");
     return "";
   }
+
+  // Creates confirmation for lowercase selection
+  var lowercaseSelect = confirm("Click OK to confirm using lowercase characters.");
+
+  if (lowercaseSelect) {
+    passwordChar += lowercaseSelect;
+  }
 }
 
 // Write password to the #password input
